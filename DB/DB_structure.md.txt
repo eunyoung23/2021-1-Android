@@ -1,0 +1,33 @@
+## 테이블 설계			*pk	/fk
+
+회원 members (회원에 모임 참여자와 대표자 모두 포함)
+*회원번호	member_no
+회원id	member_id
+회원pw	member_pw
+회원명	member_name
+
+모임 대표자 leaders
+*대표자번호	leader_no
+대표자 전화번호	leader_tel
+/회원번호		member_no
+
+모임 meetings
+*모임id		meeting_id
+모임명		meeting_name
+모임비밀번호 	meeting_pw
+/대표자일렬번호	leader_no
+
+
+모임별 참여자 participants_by_meetings
+*/모임id		meeting_id
+*/회원번호	member_no
+
+장부 account_books			
+*장부id	account_id
+/모임id	meeting_id
+/대표자번호	leader_no
+날짜	date
+입금액	deposit
+출금액	withdraw
+잔액	balance
+내용	contents
