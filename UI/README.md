@@ -2,3 +2,5 @@
 - make_2 	모임 개설 완료(비밀번호 복사)
 - join	모임 가입
 - list	목록
+- activity_main.xml : 계좌 입출금 내역 입력
+- activity_main2.xml : 입출금 내역 
