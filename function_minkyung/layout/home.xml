@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+
+        <ImageButton
+            android:id="@+id/alarm"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/alarm1"
+            android:onClick="mOnClick"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginEnd="5dp"
+            android:text="로그아웃"
+            android:textSize="12sp"
+            android:onClick="mOnClick"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="0dp"
+        android:text="공금횡령방지"
+        android:textColor="#000000"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/button_main_my_meeting"
+        android:layout_width="155dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/button_background"
+        android:drawableEnd="@drawable/drawable_end_image_my_meeting"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="나의 모임"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:onClick="mOnClick"/>
+
+    <Button
+        android:id="@+id/button_main_meeting_create"
+        android:layout_width="155dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="80dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:drawableEnd="@drawable/drawable_end_image_meeting_create"
+        android:drawablePadding="10dp"
+        android:text="모임 개설"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:onClick="mOnClick"/>
+
+    <Button
+        android:id="@+id/button_main_meeting_join"
+        android:layout_width="155dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="80dp"
+        android:padding="10dp"
+        android:background="@drawable/button_background"
+        android:drawableEnd="@drawable/drawable_end_image_meeting"
+        android:drawablePadding="10dp"
+        android:text="모임 가입"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:onClick="mOnClick"/>
+
+</LinearLayout>
